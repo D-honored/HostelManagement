@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+	<title>
+		RegisterPage
+	</title>
+	<style type="text/css">
+		body{
+			background-color: #5CDB95;
+			font-family:'BioRhyme',serif;
+		}
+		.head{
+			color: #E5FBC3;
+			font-size: 4vw;
+			text-align: center;
+			padding-top: 2vw;
+			padding-bottom: 3vw;
+		}
+		.body{
+			margin-right: 25%;
+			margin-left: 25%;
+			background-color: #8EE4AF;
+			font-size: 2vw;
+			padding:3% 9%;
+			margin-bottom: 4%;
+		}
+		.small{
+			color: #05386B;
+			font-size: 1.5vw;
+		}
+		input,select{
+			border-radius: .3vw;
+			border: 0px;
+			background-color: #B0EEC8;
+			border-bottom: .3vw solid #05386B;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">Registration Page</div>
+	<div class="body">
+		<form>
+			<div class="small">Your Name</div>
+			<input type="text" name="Name" placeholder="Your Full Name"><br><br>
+			<div class="small">Post</div>
+			<select name="Position">
+				<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				<option value="Admin">Admin</option>
+				<option value="Student">Student</option>
+			</select><br><br>
+			<div class="small">ID</div>
+			<input type="text" name="ID" placeholder="ID"><br><br>
+			<div class="small">UserName</div>
+			<input type="text" name="Username" placeholder="Username"><br><br>
+			<div class="small">Password</div>
+			<input type="password" name="Password" placeholder="Password"><br><br>
+			<div class="small">Re-Confirm Password</div>
+			<input type="password" name="RePassword" placeholder="Confirm Password"><br><br><br>
+			<input type="submit" name="submit" value="Register" style="border: none;background-color: #05386B;color:#E5FBC3;
+			font-size: 2.3vw;">
+		</form>
+	</div>
+</body>
+</html>
