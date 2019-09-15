@@ -1,0 +1,58 @@
+<html>
+ <head>
+ <title>View images of hostel</title>
+ <script type="text/javascript">
+ 
+ var width=300;
+ var difference=10;
+ var interveralID =0;
+ 
+ function increase()
+ {
+ clearInterval(interveralID);
+ interveralID=setInterval(zoomIN,5);
+ }
+ function decrease()
+ {
+ clearInterval(interveralID);
+ interveralID=setInterval(zoomOUT,5);
+ }
+ function zoomIN()
+ {
+ if(width<500)
+ {
+ width = width+difference;
+ document.getElementById("img1").style.width=width;
+ console.log(width);
+ }
+ else
+ {
+ clearInterval(interveralID);
+ }
+ 
+ }
+ function zoomOUT()
+ {
+ if(width>300)
+ {
+ width = width-difference;
+ document.getElementById("img1").style.width=width;
+ console.log(width);
+ }
+ else
+ {
+ clearInterval(interveralID);
+ }
+ 
+ }
+ 
+ </script>
+ </head>
+ <body>
+ 
+ <br>
+ <br>
+  <img onmouseover="increase()" onmouseout="decrease()" id="img1" src="C:\xampp\htdocs\HM\sseater.png" width="300"/>
+ </body>
+ 
+</html>
