@@ -72,12 +72,14 @@ $db=mysqli_connect($host,$user,$pass,$database);
 <body>
 	<div style="background-color: #05386B;">
 		<div id="header">
+		<a href = "UserPage.php" style = "text-decoration: none;">
 			Hi,<?php 
 					$NameQuery="SELECT * from Usertable where ID = '$ID'";
 					$Nameresult=mysqli_query($db,$NameQuery);
 					$Namerow = mysqli_fetch_assoc($Nameresult);
 					echo $Namerow['Username'];
 				?>
+		</a>
 			<a href="Logout.php">
 				<button style="float: right; background-color: #E55917; font-size: 2vw;border: none;">Logout</button>
 			</a>
